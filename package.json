@@ -1,0 +1,16 @@
+{
+  "name": "ipaexfont00401",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest",
+    "html-minifier-terser": "^7.2.0"
+  },
+  "scripts": {
+    "clean": "bunx del-cli output",
+    "build:js": "bun build ./src/main.js --outdir=output --minify",
+    "build:html": "bunx html-minifier-terser ./src/index.html -o ./output/index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true",
+    "build:static": "bunx cpy-cli 'static/**/*' output",
+    "build": "bun run clean && bun run build:js && bun run build:html && bun run build:static"
+  }
+}

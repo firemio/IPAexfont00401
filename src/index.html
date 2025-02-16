@@ -31,7 +31,7 @@
             padding: 20px;
             box-shadow: 0 0 10px #0f0;
             position: relative;
-            margin-bottom: 100px;
+            margin-bottom: 60px;
         }
         .container::before {
             content: "";
@@ -169,6 +169,36 @@
             margin-bottom: 0.5em;
             line-height: 1.4;
         }
+        .cloudflare-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8em;
+            color: #666;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .cloudflare-footer a {
+            color: #666;
+        }
+        .cloudflare-footer a:hover {
+            color: #0f0;
+        }
+        .o1pro-footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8em;
+            opacity: 0.7;
+            z-index: 1000;
+        }
+        .o1pro-footer a:hover {
+            opacity: 1;
+            color: #fff;
+            text-shadow: 0 0 5px #0f0;
+        }
     </style>
 </head>
 <body>
@@ -204,26 +234,9 @@
     <div class="cloudflare-footer">
         Powered by <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a>
     </div>
-    <style>
-        .cloudflare-footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            font-size: 0.8em;
-            color: #666;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            left: 0;
-            background: rgba(0, 0, 0, 0.8);
-        }
-        .cloudflare-footer a {
-            color: #666;
-        }
-        .cloudflare-footer a:hover {
-            color: #0f0;
-        }
-    </style>
+    <div class="o1pro-footer">
+        <a href="https://chatgpt.com/share/67b24b6e-f108-8007-b174-2a91462ef127" target="_blank" rel="noopener noreferrer">o1 Proの解釈</a>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

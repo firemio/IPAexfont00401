@@ -222,10 +222,10 @@
             <h3>PDFでのWOFF2フォントの互換性に関する注意事項</h3>
             <p>WOFF2形式のフォントをPDFで使用する際、ブラウザによって互換性が異なります：</p>
             <ul>
-                <li>Firefox: WOFF2形式のフォントを含むPDFを正常に表示できます</li>
-                <li>Chrome: WOFF2形式のフォントを含むPDFを表示できません</li>
+                <li>Firefox: WOFF2形式のフォントを含むPDFを正常に表示できます(pdf.js)</li>
+                <li>Chrome: WOFF2形式のフォントを含むPDFを表示できません(PDFium)</li>
             </ul>
-            <p>Chromeで日本語PDFを開いてテキストをコピー＆ペーストする必要がある場合は、.ttf形式のフォントを使用し、ToUnicodeマップを埋め込むことを推奨します。</p>
+            <p>Chromeで日本語PDFを表示する場合は.ttf形式のフォントで十分ですが、テキストのコピー＆ペーストを行うにはToUnicodeマップの埋め込みが必要です。</p>
         </div>
         <div class="source">
             Source: <a href="https://moji.or.jp/ipafont/ipaex00401/" target="_blank">IPAフォント（IPAex明朝、IPAexゴシック）</a>

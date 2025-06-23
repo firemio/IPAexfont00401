@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'ipaexg.woff2', description: 'IPAexゴシック - 2.9M', link: true },
         { name: 'ipaexm.ttf', description: 'IPAex明朝 - 7.6M', link: true },
         { name: 'ipaexg.ttf', description: 'IPAexゴシック - 5.9M', link: true },
+        { name: 'Jigmo2.ttf', description: 'Jigmo2フォント - 31MB', link: true },
         { name: 'IPA_Font_License_Agreement_v1.0.txt', description: 'IPAフォントライセンスv1.0', link: false },
         { name: 'Readme_IPAexfont00401.txt', description: 'フォント説明文書', link: false },
     ];
